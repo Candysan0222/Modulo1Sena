@@ -7,14 +7,16 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ProyectoGT.proyectoGT.IRepository.ObjetoT.IObjetoTRepository;
-import com.ProyectoGT.proyectoGT.IService.ObjetoT.IObjetoTService;
-import com.ProyectoGT.proyectoGT.Utils.GlobalConstants;
+import modulo1Sena.modulo1.IRepository.ObjetoT.IObjetoTRepository;
+import modulo1Sena.modulo1.IService.ObjetoT.IObjetoTService;
+import modulo1Sena.modulo1.Utils.GlobalConstants;
+
+
 
 @Service
 public abstract class objetoTService<T> implements IObjetoTService<T>{
 	@Autowired 
-	private IObjetoTRepository<T> repository;
+	private IObjetoTRepository<T,Long> repository;
 
 	@Override
 	public List<T> all() {
@@ -57,8 +59,9 @@ public abstract class objetoTService<T> implements IObjetoTService<T>{
 
 	@Override
 	public List<T> findByEstadoTrue() {
+		
 		// TODO Auto-generated method stub
-		return repository.findByEstadoTrue();
+		return repository.findByStateTrue();
 	}
 
 }

@@ -10,9 +10,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.ProyectoGT.proyectoGT.Utils.ApiResponseDto;
+
 
 import modulo1Sena.modulo1.IService.ObjetoT.IObjetoTService;
+import modulo1Sena.modulo1.Utils.ApiResponseDto;
 
 public class objetoTController <T>{
 	@Autowired
