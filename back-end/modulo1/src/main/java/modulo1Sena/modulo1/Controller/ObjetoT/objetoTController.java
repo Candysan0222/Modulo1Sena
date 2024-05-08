@@ -9,15 +9,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-
-
-
-import modulo1Sena.modulo1.IService.ObjetoT.IObjetoTService;
+import modulo1Sena.modulo1.Service.ObjetoT.ObjetoTService;
 import modulo1Sena.modulo1.Utils.ApiResponseDto;
 
 public class objetoTController <T>{
 	@Autowired
-	private IObjetoTService<T> service;
+	private ObjetoTService<T> service;
 	
 	@PostMapping("/")
     public T save(@RequestBody T objeto) throws Exception{

@@ -1,8 +1,8 @@
 package modulo1Sena.modulo1.Service;
 
-import modulo1Sena.modulo1.Repository.ventas;
-import modulo1Sena.modulo1.Service.ObjetoT.objetoTService;
+import modulo1Sena.modulo1.Entity.ventas;
+import modulo1Sena.modulo1.Service.ObjetoT.ObjetoTService;
 
-public class ventasService extends objetoTService<ventas>{
+public class ventasService extends ObjetoTService<ventas>{
 
 }

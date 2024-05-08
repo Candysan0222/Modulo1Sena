@@ -1,0 +1,10 @@
+body {
+    background-color: #f8f9fa;
+    padding-top: 100px;
+}
+.container {
+    text-align: center;
+}
+.btn {
+    margin: 10px;
+}

@@ -9,11 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
-  <!--SweetAlert2-->
-  <link rel="stylesheet" href="/assets/lib/node_modules/sweetalert2/dist/sweetalert2.css">
   <!-- Boxiocns CDN Link -->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/lib/node_modules/bootstrap/dist/js/bootstrap.js">
 </head>
 
 <body>
@@ -27,9 +26,27 @@
     </div>
     <ul class="nav-links" style="background-color: #2724e2cb;">
       <li>
-        <a href="index.html" target="workSpace">
+        <a target="workSpace">
           <i class='bx bx-grid-alt'></i>
-          <span class="link_name">Home</span>
+          <span class="link_name">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="CRUDclientes.html" target="workSpace">
+          <i class='bx bxs-user'></i>
+          <span class="link_name">Clientes</span>
+        </a>
+      </li>
+      <li>
+        <a href="CRUDproductos.html" target="workSpace">
+          <i class='bx bxs-package' ></i>
+          <span class="link_name">Productos</span>
+        </a>
+      </li>
+      <li>
+        <a href="index.html" target="workSpace">
+          <i class='bx bx-dollar' ></i>
+          <span class="link_name">Ventas</span>
         </a>
       </li>
       
@@ -95,12 +112,5 @@
 
 </body>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    loadPermission();
-
-  });
-
-</script>
 
 </html>

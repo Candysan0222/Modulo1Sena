@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import modulo1Sena.modulo1.Controller.ObjetoT.objetoTController;
-import modulo1Sena.modulo1.Repository.descripcionVentas;
+import modulo1Sena.modulo1.Entity.descripcionVentas;
 
 @RequestMapping ("/api/v1/modulo1/descripcionVentas")
 @RestController

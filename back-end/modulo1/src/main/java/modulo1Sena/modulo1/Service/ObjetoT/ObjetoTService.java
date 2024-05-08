@@ -14,7 +14,7 @@ import modulo1Sena.modulo1.Utils.GlobalConstants;
 
 
 @Service
-public abstract class objetoTService<T> implements IObjetoTService<T>{
+public class ObjetoTService<T> implements IObjetoTService<T>{
 	@Autowired 
 	private IObjetoTRepository<T,Long> repository;
 

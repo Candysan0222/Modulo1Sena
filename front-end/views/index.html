@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Aterrizaje</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/estilos.css">
     <style>
         body {
-            background-color: #f8f9fa;
-            padding-top: 100px;
+            padding-top: 20px;
         }
         .container {
-            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
         }
-        .btn {
-            margin: 10px;
+        .form-group {
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -22,14 +23,71 @@
 
 <div class="container">
     <h1>Bienvenido</h1>
-    <p>Seleccione una opción:</p>
-    <a href="CRUDclientes.html" class="btn btn-primary">Gestionar Clientes</a>
-    <a href="CRUDproductos.html" class="btn btn-secondary">Gestionar Productos</a>
+
+    <!-- Código de gestión de ventas -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Gestión de Ventas</h5>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control mb-2" id="filter-fecha" placeholder="Filtrar por fecha">
+                </div>
+                <div class="col-md-4">
+                    <select class="form-control mb-2" id="filter-cliente">
+                        <option value="">Filtrar por cliente</option>
+                        <!-- Opciones de clientes -->
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-control mb-2" id="filter-estado">
+                        <option value="">Filtrar por estado</option>
+                        <option value="borrador">Borrador</option>
+                        <option value="cancelada">Cancelada</option>
+                        <option value="pendiente_pago">Pendiente de Pago</option>
+                        <option value="pagada">Pagada</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary">
+                        Buscar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Ventas Registradas</h5>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <!-- Encabezados de la tabla -->
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Cliente</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <!-- Cuerpo de la tabla -->
+                    <tbody id="sales-table">
+                        <!-- Aquí se mostrarán las ventas -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Aquí puedes agregar el código JavaScript para manejar las acciones de la página de gestión de ventas.
+</script>
 
 </body>
 </html>
+
