@@ -3,28 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Aterrizaje</title>
+    <title>Ventas</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/estilos.css">
-    <style>
-        body {
-            padding-top: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Bienvenido</h1>
+    <h1>Ventas</h1>
 
-    <!-- Código de gestión de ventas -->
+    <!-- Gestión de ventas -->
     <div class="card mb-4">
         <div class="card-body">
             <h5 class="card-title">Gestión de Ventas</h5>
@@ -64,15 +52,17 @@
                     <!-- Encabezados de la tabla -->
                     <thead>
                         <tr>
-                            <th>Fecha</th>
-                            <th>Cliente</th>
+                            <th>ID Venta</th>
+                            <th>ID Cliente</th>
+                            <th>Total</th>
+                            <th>Fecha de venta</th>
                             <th>Estado</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <!-- Cuerpo de la tabla -->
                     <tbody id="sales-table">
-                        <!-- Aquí se mostrarán las ventas -->
+                        <!-- Ventas -->
                     </tbody>
                 </table>
             </div>
@@ -84,9 +74,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    // Aquí puedes agregar el código JavaScript para manejar las acciones de la página de gestión de ventas.
-</script>
+
 
 </body>
 </html>

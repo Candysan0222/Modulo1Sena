@@ -8,3 +8,14 @@ body {
 .btn {
     margin: 10px;
 }
+
+body {
+    padding-top: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.form-group {
+    margin-bottom: 20px;
+}

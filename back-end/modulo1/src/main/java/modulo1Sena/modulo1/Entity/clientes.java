@@ -106,6 +106,14 @@ public class clientes {
 	public void setCiudad(String ciudad) {
 		this.ciudad = ciudad;
 	}
+	
+	public String getCorreoElectronico() {
+		return correoElectronico;
+	}
+
+	public void setCorreoElectronico(String correoElectronico) {
+		this.correoElectronico = correoElectronico;
+	}
 
 	public Boolean getEstado() {
 		return estado;
